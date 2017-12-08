@@ -1,0 +1,7 @@
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\bin\Debug\MoviesLibraryExercise.Console.exe
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\bin\Debug\MoviesLibraryExercise.Console.pdb
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\obj\Debug\MoviesLibraryExercise.Console.csprojResolveAssemblyReference.cache
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\obj\Debug\MoviesLibraryExercise.Console.exe
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\obj\Debug\MoviesLibraryExercise.Console.pdb
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\bin\Debug\MoviesLibraryExercise.Console.exe.config
+C:\Users\Gunjan\Documents\Visual Studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.Console\bin\Debug\MoviesLibraryExercise.ConsoleApp.exe.config

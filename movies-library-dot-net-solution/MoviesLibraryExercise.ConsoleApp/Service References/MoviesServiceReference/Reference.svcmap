@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5e5e1f1f-2f5f-4ac9-a2b5-0581a4eed350" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/movieslibrary" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="9a9e7aa9-573d-4321-a19d-c4c166683d8a" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?xsd=xsd0" />
+    <MetadataFile FileName="mex.disco" MetadataType="Disco" ID="2ff9ae7c-146c-4e74-829f-5a8b28061688" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?disco" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="a1e9f2f5-7537-4a09-98b0-8b51aaa97e55" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?xsd=xsd3" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="f3a4dbdf-854d-48d9-b4cd-c00d69619a7e" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?xsd=xsd2" />
+    <MetadataFile FileName="mex3.xsd" MetadataType="Schema" ID="479b77c3-5ea2-43a3-8c8b-f9e804cb48e5" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?xsd=xsd1" />
+    <MetadataFile FileName="mex4.xsd" MetadataType="Schema" ID="c358e3b8-b9a1-4e73-b9ca-3f04cfb7ebba" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?xsd=xsd4" />
+    <MetadataFile FileName="MovieLibrary.wsdl" MetadataType="Wsdl" ID="adb8f99b-10e2-41c3-94cd-60a6137ac736" SourceId="1" SourceUrl="http://localhost/movieslibrary/mex?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="compile">
+<head>
+    <title>Profile Browser</title>
+    
+    <link href="Style/index.css" rel="stylesheet" />
+    
+    <!-- Provided Data File : Has Been Tweeked A Little -->
+    <script src="Scripts/data.js"></script>
+    
+    <!-- Third Pary JS Libraries -->
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    
+    <!-- Custom JS - Can Be Written In Separate File (Written In HTML To Be More Redable Together) -->
+    <script type="text/javascript">
+        $(function () {
+            // Tab Click Controlling Function
+            $(".tab").click(function () {
+
+                // Hiding All Other Profiles But The Selected One
+                $(".profile-info-outer").hide();
+                $("#profile-info-outer-" + $(this).attr('data-row-id')).show();
+
+
+                // Setting All Tabs Look Like Not Selected
+                $(".tab").each(function () {
+                    $(this).removeClass('active');
+                });
+
+                // Setting Selected Tab Look Like Selected
+                var tabId = "#tab-" + $(this).attr('data-row-index');
+                var mobileTabId = "#mobile-tab-" + $(this).attr('data-row-index');
+                
+                $(tabId).addClass('active');
+                $(mobileTabId).addClass('active');
+                
+            });
+
+            // Loading First Profile As Default On PageLoad
+            $("#tab-0").click();
+        });
+        
+        // Initializing Angular Engine To Compile Page As Angular Page
+        angular.module('compile', [], function ($compileProvider) {
+            $compileProvider.directive('compile', function ($compile) {
+                return function (scope, element, attrs) {
+                    scope.$watch(
+                      function (scope) {
+                          return scope.$eval(attrs.compile);
+                      },
+                      function (value) {
+                          element.html(value);
+                          $compile(element.contents())(scope);
+                      }
+                    );
+                };
+            })
+        });
+        
+        // Setting Scope For Angular Controller - Providing Data To Controller
+        function HollywoodProfiles($scope) {
+            $scope.profiles = profilesData;
+        }
+    </script>
+</head>
+<body ng-controller="HollywoodProfiles">
+    <header>
+        <h1>Profile Browser</h1>
+    </header>
+
+    <nav class="tab-list">
+        <ul class="tab-items">
+            <li id="tab-{{$index}}" ng-repeat="profile in profiles|orderBy:'firstName'" data-row-index={{$index}} data-row-id="{{profile.id}}" ng-class="{top: $first, bottom: $last}" class="tab tab-items">
+                <div>{{profile.firstName}} {{profile.lastName}}</div>
+            </li>
+        </ul>
+    </nav>
+    <ul>
+        <li ng-repeat="profile in profiles|orderBy:'firstName'" class="profile-info">
+            <div id="mobile-tab-{{$index}}" data-row-index={{$index}} data-row-id="{{profile.id}}" class="mobile-tab tab tab-items">
+                <div>{{profile.firstName}} {{profile.lastName}}</div>
+            </div>
+            <div class="profile-info-outer" id="profile-info-outer-{{profile.id}}">
+                <div class="profile-info-image-outer">
+                    <img ng-src="images/{{profile.id}}.jpg" title="{{profile.firstName}} {{profile.lastName}}" class="profile-info-image">
+                </div>
+                <h3 class="profile-info-header">{{profile.firstName}} {{profile.lastName}}</h3>
+                <div ng-bind="profile.bio"></div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
+

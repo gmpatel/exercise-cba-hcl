@@ -1,0 +1,7 @@
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\bin\Debug\MoviesLibraryExercise.ServiceLibrary.dll.config
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\bin\Debug\MoviesLibraryExercise.ServiceLibrary.dll
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\bin\Debug\MoviesLibraryExercise.ServiceLibrary.pdb
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\bin\Debug\MoviesLibrary.dll
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\obj\Debug\MoviesLibraryExercise.ServiceLibrary.dll
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\obj\Debug\MoviesLibraryExercise.ServiceLibrary.pdb
+c:\users\gunjan\documents\visual studio 2012\Projects\MoviesLibraryExercise.Console\MoviesLibraryExercise.ServiceLibrary\obj\Debug\MoviesLibraryExercise.ServiceLibrary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,141 @@
+﻿html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 960px;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tab-list {
+    float: left;
+    margin-top: 50px;
+}
+
+
+.tab-items {
+    width: 150px;
+    float: left;
+    z-index: 10;
+    position: relative;
+}
+
+.tab {
+    width: 150px;
+    background: #A9A9A9;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.tab.top {
+    border-top-left-radius: 5px;
+}
+
+.tab.active {
+    background: #cccccc;
+    border-right: none;
+    width: 150px;
+}
+
+.tab.bottom {
+    border-bottom-left-radius: 5px;
+}
+
+.mobile-tab {
+    display: none;
+}
+.profile-info {
+    width: 700px;
+    float: left;
+}
+
+.profile-info-outer {
+    display: none;
+    text-align: left;
+    padding: 20px;
+    margin-left: 11px;
+    border-left: 1px solid #CCC;
+}
+
+.profile-info-image-outer {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 5px 0;
+    border: 7px solid white;
+    box-shadow: 0 0 7px #808080;
+}
+
+.profile-info-image {
+    position: absolute;
+    width: 150px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    clip: rect(0, 150px, 150px, 0);
+    float: left;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        width: 100%;
+        float: none;
+        font-size: 16px;
+    }
+    
+    .tab-list {
+        display: none;
+    }
+
+    .tab-items {
+        width: 100%;
+        float: none;
+        font-size: 16px;
+    }
+    
+    .tab.active {
+        width: 100%;
+        float: none;
+        font-size: 16px;
+        background: #cccccc;
+        font-weight: bold;
+        border: none;
+    }
+    
+    .mobile-tab {
+        display: block;
+    }
+
+    .profile-info {
+        width: 100%;
+        float: none;
+        font-size: 16px;
+    }
+    
+    .profile-info-header {
+        display: none;
+    }
+	
+    .profile-info-wrapper {
+        padding: 10px;
+        min-height: 220px;
+		border:none;
+    }
+} 
